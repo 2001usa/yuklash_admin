@@ -1,0 +1,10 @@
+# step papkani himoyalash
+<FilesMatch "\.json$">
+    Deny from all
+</FilesMatch>
+
+# step papka uchun
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^step/ - [F,L]
+</IfModule>
